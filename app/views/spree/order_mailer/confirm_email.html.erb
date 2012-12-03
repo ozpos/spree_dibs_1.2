@@ -1,0 +1,27 @@
+<html>
+<body>
+<p>Dear Customer,</p>
+
+<p>Your order should be reviewed and processed within 24 to 48 hours. Once your order has been processed, you will receive an email.</p>
+
+<p>Please review and retain the following order information for your records.</p>
+
+<hr/>
+<h5>Order Summary [PROCESSING]</h5>
+<hr/>
+<pre>
+<% @order.line_items.each do |item| %>
+  <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%> (<%=item.quantity%>) @ <%= number_to_currency item.price %> = <%= number_to_currency(item.price * item.quantity) %>
+<% end %>
+</pre>
+<hr/>
+<pre>
+Subtotal: <%= number_to_currency @order.item_total %>
+<% @order.adjustments.each do |adjustment| %>
+  <%= raw(adjustment.label) %> <%= number_to_currency(adjustment.amount) %>
+<% end %>
+Order Total: <%= number_to_currency(@order.total) %>
+</pre>
+<p>Thank you for your business.</p>
+</body>
+</html>
