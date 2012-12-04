@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/jsqu99/spree_flexi_variants.git
+  revision: 45177f44eeb4e9ef9b9d766a10702a07fbb8fe41
+  branch: spree-1-2-stable
+  specs:
+    spree_flexi_variants (1.0.0)
+      carrierwave
+      json
+      rmagick
+      spree_core (~> 1.2)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: df8470bcc693bf06c48e79061caef545ab3ce4d2
   branch: 1-2-stable
@@ -118,6 +129,9 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    carrierwave (0.7.1)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
     cocaine (0.4.2)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -216,6 +230,7 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12)
       json (~> 1.4)
+    rmagick (2.13.1)
     sass (3.2.3)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -258,6 +273,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree!
   spree_auth_devise!
+  spree_flexi_variants!
   spree_gateway!
   therubyracer
   uglifier (>= 1.0.3)
