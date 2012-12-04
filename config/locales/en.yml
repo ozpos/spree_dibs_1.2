@@ -2,4 +2,8 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  shipping_address: End User Address
+  licensing_notice: |
+    Valid only for Add2Exchange licensees who have valid software
+    assurance in place and would like to add more relationships to their
+    existing licensed product.
