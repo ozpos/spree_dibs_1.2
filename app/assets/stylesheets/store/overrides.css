@@ -38,3 +38,14 @@ ul#products li .price {
   float: right;
   padding: 10px 0;
 }
+
+#ad_hoc_options dl dt, #ad_hoc_options dl dd {
+  display: block;
+  width: 100%;
+  padding: 5px 0 0;
+}
+
+#ad_hoc_options dl dd {
+  margin-left: 0;
+}
+
