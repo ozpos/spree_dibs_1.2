@@ -1,10 +1,17 @@
-Dear Customer,
+Dear <%= @order.bill_address.firstname %>,
 
 The pending transaction on your account has been voided.
 
 Please review and retain the following order information for your records.
 
 This email is informational only.  No action is required on your part.
+
+Billing address:
+
+<%= @order.bill_address.full_name %>
+<%= @order.bill_address.address1 %><% if @order.bill_address.address2 != "" %>
+<%= @order.bill_address.address2 %><% end %>
+<%= @order.bill_address.city %><% if @order.bill_address.state %>, <%= @order.bill_address.state.abbr %><% end %>  <%= @order.bill_address.zipcode %><% if @order.bill_address.country.iso3 != "USA" %> <%= @order.bill_address.country.iso3 %><% end %>
 
 ============================================================
 Order Summary [VOIDED]
@@ -18,4 +25,3 @@ Subtotal: <%= number_to_currency @order.item_total %>
   <%= raw(adjustment.label) %> <%= number_to_currency(adjustment.amount) %>
 <% end %>
 Order Total: <%= number_to_currency(@order.total) %>
-

@@ -1,6 +1,6 @@
 <html>
 <body>
-<p>Dear Customer,</p>
+<p>Dear <%= @order.bill_address.firstname %>,</p>
 
 <p>The pending transaction on your account has been voided.</p>
 
@@ -8,6 +8,13 @@
 
 <p>This email is informational only.  No action is required on your part.</p>
 
+<p><strong>Billing address:</strong></p>
+<p><strong><%= @order.bill_address.full_name %></strong><br />
+<%= @order.bill_address.address1 %><br />
+<% if @order.bill_address.address2 != "" %>
+<%= @order.bill_address.address2 %><br />
+<% end %>
+<%= @order.bill_address.city %><% if @order.bill_address.state %>, <%= @order.bill_address.state.abbr %><% end %>  <%= @order.bill_address.zipcode %><% if @order.bill_address.country.iso3 != "USA" %> <%= @order.bill_address.country.iso3 %><% end %></p>
 <hr/>
 <h5>Order Summary [VOIDED]</h5>
 <hr/>
