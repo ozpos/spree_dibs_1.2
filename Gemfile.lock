@@ -10,6 +10,13 @@ GIT
       spree_core (~> 1.2)
 
 GIT
+  remote: git://github.com/lilleyt/spree_dibs_referral.git
+  revision: 5c66a5896c0942d10451a6347c092af810f8e92c
+  specs:
+    spree_dibs_referral (1.2.0)
+      spree_core (~> 1.2.3.beta)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: df8470bcc693bf06c48e79061caef545ab3ce4d2
   branch: 1-2-stable
@@ -288,6 +295,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree!
   spree_auth_devise!
+  spree_dibs_referral!
   spree_flexi_variants!
   spree_gateway!
   spree_print_invoice!
