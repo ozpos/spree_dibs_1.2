@@ -1,0 +1,4 @@
+<!--
+  replace 'code[erb-loud]:contains("states_url")'
+-->
+<% javascript_include_tag states_url + ".js" %>
