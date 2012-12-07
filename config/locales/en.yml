@@ -13,3 +13,4 @@ en:
     capture_email:
       subject: "Transaction Processing Complete"
   print_note: ""
+  cart_referral_subject: Recommended options you requested from DidItBetter.com
