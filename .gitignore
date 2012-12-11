@@ -16,6 +16,8 @@
 /log/*.log
 /tmp
 
+.vagrant
+Vagrantfile
 .dropbox
 *.bak
 /public/spree/
