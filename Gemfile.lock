@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/lilleyt/spree_dibs_referral.git
-  revision: 90a9937e7cc7e36ccf3d842c3da93c472d101bfb
+  revision: 8d705d26e63e47c9cddc00f5b595216bb52059e9
   specs:
     spree_dibs_referral (1.2.0)
       spree_core (~> 1.2.3.beta)
@@ -179,7 +179,7 @@ GEM
     jquery-rails (2.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    json (1.7.5)
+    json (1.7.6)
     kaminari (0.13.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
