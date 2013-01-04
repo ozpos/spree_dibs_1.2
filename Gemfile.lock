@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/lilleyt/spree_dibs_referral.git
-  revision: 8d705d26e63e47c9cddc00f5b595216bb52059e9
+  revision: cb8e2d6b1192b8daa15de168da033985769391dc
   specs:
     spree_dibs_referral (1.2.0)
       spree_core (~> 1.2.3.beta)
