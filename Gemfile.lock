@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/aptinio/text-table.git
+  revision: ad7f6c9a3767e2ced139bffc68c811a4c1d88acc
+  specs:
+    text-table (1.2.2)
+
+GIT
   remote: git://github.com/jsqu99/spree_flexi_variants.git
   revision: 45177f44eeb4e9ef9b9d766a10702a07fbb8fe41
   branch: spree-1-2-stable
@@ -305,6 +311,7 @@ DEPENDENCIES
   spree_flexi_variants!
   spree_gateway!
   spree_print_invoice!
+  text-table!
   therubyracer
   uglifier (>= 1.0.3)
   unicorn
