@@ -17,6 +17,15 @@ GIT
       spree_core (~> 1.2.3.beta)
 
 GIT
+  remote: git://github.com/lilleyt/spree_email_to_friend.git
+  revision: 1206027c9ae24669e1bb86b37ef9dcd55fb17c95
+  branch: 1-2-stable
+  specs:
+    spree_email_to_friend (1.2)
+      recaptcha (>= 0.3.1)
+      spree_core (~> 1.2.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: b4e252ee25f9e1c1b93a4358a317907aa372c68f
   branch: 1-2-stable
@@ -155,6 +164,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    columnize (0.3.6)
+    debugger (1.2.3)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.5)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.6)
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
@@ -254,6 +271,7 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12)
       json (~> 1.4)
+    recaptcha (0.3.4)
     rmagick (2.13.1)
     sass (3.2.3)
     sass-rails (3.2.5)
@@ -294,6 +312,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   coffee-rails (~> 3.2.1)
+  debugger
   foreman
   jquery-rails
   mysql2
@@ -302,6 +321,7 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_dibs_referral!
+  spree_email_to_friend!
   spree_flexi_variants!
   spree_gateway!
   spree_print_invoice!
