@@ -4,9 +4,9 @@ module ApplicationHelper
     @order.line_items.each do |item|
       product_info << "#{item.variant.sku}  #{raw(item.variant.product.name)}  #{raw(item.variant.options_text)}"
       unless item.ad_hoc_option_values.empty?
-        item.ad_hoc_option_values.each do |pov|
-          product_info << "#{pov.option_value.option_type.presentation} = #{pov.option_value.presentation} #{"," unless pov == item.ad_hoc_option_values.last}"
-        end
+        product_info << item.ad_hoc_option_values.map { |pov|
+          "#{pov.option_value.option_type.presentation} = #{pov.option_value.presentation}"
+        }.join(", ")
       end
       product_info << "(#{item.quantity}) @ #{number_to_currency item.price} = #{number_to_currency(item.price * item.quantity)}"
       product_info << ""
