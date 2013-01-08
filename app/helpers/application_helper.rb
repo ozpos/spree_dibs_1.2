@@ -17,6 +17,6 @@ module ApplicationHelper
       product_info << "#{raw(adjustment.label)} #{number_to_currency(adjustment.amount)}"
     end
     product_info << "Order Total: #{number_to_currency(@order.total)}"
-    "http://#{Spree::Config[:site_url]}/dibs_referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{product_info.join("\n")}"
+    "Click here to purchase:\n\nhttp://#{Spree::Config[:site_url]}/dibs_referral?dibs_referral=#{URI::encode_www_form_component @current_user.email}&#{@order.dibs_referral_line_items.to_param}\n\n#{product_info.join("\n")}"
   end
 end
