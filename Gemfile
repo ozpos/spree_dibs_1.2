@@ -36,7 +36,7 @@ gem 'capistrano', group: :development
 gem 'foreman', group: :production
 
 # To use debugger
-gem 'debugger'
+#gem 'debugger'
 gem 'spree', github: 'spree/spree', branch: '1-2-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '1-2-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '1-2-stable'

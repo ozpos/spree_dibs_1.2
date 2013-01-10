@@ -1,6 +1,6 @@
 module ApplicationHelper
   def dibs_referral_body
-    product_info = ["======", ""]
+    product_info = []
     @order.line_items.each do |item|
       product_info << "#{item.variant.sku}  #{raw(item.variant.product.name)}  #{raw(item.variant.options_text)}"
       unless item.ad_hoc_option_values.empty?
@@ -8,7 +8,7 @@ module ApplicationHelper
           "#{pov.option_value.option_type.presentation} = #{pov.option_value.presentation}"
         }.join(", ")
       end
-      product_info << "(#{item.quantity}) @ #{number_to_currency item.price} = #{number_to_currency(item.price * item.quantity)}"
+      product_info << "(#{item.quantity}) @ #{number_to_currency item.price}: #{number_to_currency(item.price * item.quantity)}"
       product_info << ""
     end
     product_info << "======"
