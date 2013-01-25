@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jsqu99/spree_flexi_variants.git
-  revision: 45177f44eeb4e9ef9b9d766a10702a07fbb8fe41
+  revision: 50e184fa9b7351c38f06684d95a206116e66b09d
   branch: spree-1-2-stable
   specs:
     spree_flexi_variants (1.0.0)
@@ -153,7 +153,7 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    carrierwave (0.7.1)
+    carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
     climate_control (0.0.3)
